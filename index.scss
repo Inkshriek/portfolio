@@ -74,6 +74,7 @@ body {
     background-size: cover;
     font-family: $fontfamily1;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 footer {

@@ -107,6 +107,7 @@ body {
   background-size: cover;
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 footer {
