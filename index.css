@@ -287,7 +287,7 @@ button {
 }
 
 .toggle img {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   opacity: 50%;
   position: relative;
   height: 40px;
@@ -297,7 +297,7 @@ button {
 }
 
 .active .toggle img {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 .toggle:hover img {
