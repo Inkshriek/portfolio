@@ -10,7 +10,7 @@ $cardwidth: 600px;
 $cardheight: 400px;
 $itemheight: 240px;
 $itemwidth: 900px;
-$descheight: 400px;
+$descheight: 300px;
 $dropdownheight: 40px;
 $expandedheight: 700px;
 
@@ -19,12 +19,69 @@ $expandedheight: 700px;
 //
 @media (min-width:320px) {
     // smartphones, portrait iPhone, portrait 480x320 phones (Android)
+    .item.active {
+        height: $expandedheight - 125px;
+    }
+    
+    .item.inactive {
+        height: $itemheight - 125px;
+    }
+
+    .toggle {
+        top: $itemheight - $dropdownheight - 125px;
+    }
+
+    .active .toggle {
+        top: $expandedheight - $dropdownheight - 125px;
+    }
+
+    .content {
+        top: $expandedheight - $descheight - $dropdownheight * 2 - 125px;
+    }
 }
 @media (min-width:480px)  {  
     // smartphones, Android phones, landscape iPhone
+    .item.active {
+        height: $expandedheight - 100px;
+    }
+    
+    .item.inactive {
+        height: $itemheight - 100px;
+    }
+
+    .toggle {
+        top: $itemheight - $dropdownheight - 100px;
+    }
+
+    .active .toggle {
+        top: $expandedheight - $dropdownheight - 100px;
+    }
+
+    .content {
+        top: $expandedheight - $descheight - $dropdownheight * 2 - 100px; 
+    }
 }
 @media (min-width:600px)  {  
     // portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)
+    .item.active {
+        height: $expandedheight;
+    }
+    
+    .item.inactive {
+        height: $itemheight;
+    }
+
+    .toggle {
+        top: $itemheight - $dropdownheight;
+    }
+
+    .active .toggle {
+        top: $expandedheight - $dropdownheight;
+    }
+
+    .content {
+        top: $expandedheight - $descheight - $dropdownheight * 2;
+    }
 }
 @media (min-width:801px)  { 
     // tablet, landscape iPad, lo-res laptops ands desktops
@@ -63,6 +120,11 @@ $expandedheight: 700px;
 @keyframes fadeaway {
     from { opacity: 100%; }
     to { opacity: 0%; }
+}
+@keyframes delay {
+    0% { display: block; opacity: 100%; }
+    99% { opacity: 0%; }
+    100% { display: none; opacity: 0%; }
 }
 
 
@@ -132,6 +194,7 @@ footer {
     overflow: hidden;
     background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
@@ -253,14 +316,9 @@ button {
     cursor: pointer;
     position: relative;
     z-index: 3;
-    top: $itemheight - $dropdownheight;
     background-color: black; 
     //backdrop-filter: blur(5px);
     transition: opacity 0.5s, top 0.5s, transform 0.5s;
-}
-
-.active .toggle {
-    top: $expandedheight - $dropdownheight;
 }
 
 .toggle img {
@@ -350,33 +408,30 @@ button {
     opacity: 50%;
 }
 
-.item.active {
-    height: $expandedheight;
-}
 
-.item.inactive {
-    height: $itemheight;
-}
 
 .opened .item.inactive {
     bottom: $itemheight - $expandedheight;
 }
 
 .content {
+    display: none;
     height: $descheight;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
-    top: $expandedheight - $descheight - $dropdownheight * 2;
     left: 0;
     z-index: 2;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.719);  
-    //backdrop-filter: blur(5px);
-
+    transition: top 0.5s;
 } 
+
+.active .content {
+    display: block;
+}
 
 ::-webkit-scrollbar {
     width: 6px;
