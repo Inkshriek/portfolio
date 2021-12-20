@@ -6,10 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Church of Cthulhu
 A fictional site made for a fictional client's need.
-[Repository](https://github.com/Inkshriek/Church-of-Cthulhu).
-[Deployment](https://inkshriek.github.io/Church-of-Cthulhu/).
+* [Repository](https://github.com/Inkshriek/Church-of-Cthulhu)
+* [Deployment](https://inkshriek.github.io/Church-of-Cthulhu/)
 
 ## GreenMind
 A site designed to advocate for active citizenry against climate change.
-[Repository](https://github.com/Inkshriek/GreenMind).
-[Deployment](https://students.cah.ucf.edu/~no518143/greenmind/).
+* [Repository](https://github.com/Inkshriek/GreenMind)
+* [Deployment](https://students.cah.ucf.edu/~no518143/greenmind/)
