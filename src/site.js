@@ -10,7 +10,7 @@ function Site() {
         <Card 
         header="About Me" 
         content1="He/They | 24 | Hispanic"
-        content2="My name is Noah Jervey, or 'Hawthorn' as my alias. I am an aspiring front-end and full-stack web developer with a Bachelor's Degree in Digital Media from the University of Central Florida. While I do game work and fiction writing as a hobby, my work in website design and functionality is where I intend to form my career. I also quite like D&D and drawing sometimes!"
+        content2="Hey! My name is Noah Jervey, though you can call me Hawthorn. I am a front-end and full-stack web developer with a Bachelor's Degree in Digital Media from the University of Central Florida. While I do fiction writing and worldbuilding as hobbies, my work in website design is where I'm forming my career. I also quite like D&D and drawing sometimes!"
         content3="Further down is where you'll find my notable projects, some from my work in university and some from my personal projects."
         content4="It's just my little neck of the woods."
         />

@@ -19,8 +19,9 @@ function Item(props) {
             <div className="content">
                 <h2 className="title">{item.name}</h2>
                 <p className="desc">{item.tagline}</p>
+                <p className="desc">{item.description}</p>
                 <div className="links">
-                    <a href={item.github} title="GitHub">
+                    <a href={item.github} title="Repository">
                         <img draggable="false" src="./img/github-button.png" alt=""></img>
                     </a>
                     <a href={item.link} title="Deployment">

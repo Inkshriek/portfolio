@@ -1,6 +1,69 @@
 @import url(normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@media (min-width: 320px) {
+  .item.active {
+    height: 575px;
+  }
+
+  .item.inactive {
+    height: 115px;
+  }
+
+  .toggle {
+    top: 75px;
+  }
+
+  .active .toggle {
+    top: 535px;
+  }
+
+  .content {
+    top: 195px;
+  }
+}
+@media (min-width: 480px) {
+  .item.active {
+    height: 600px;
+  }
+
+  .item.inactive {
+    height: 140px;
+  }
+
+  .toggle {
+    top: 100px;
+  }
+
+  .active .toggle {
+    top: 560px;
+  }
+
+  .content {
+    top: 220px;
+  }
+}
+@media (min-width: 600px) {
+  .item.active {
+    height: 700px;
+  }
+
+  .item.inactive {
+    height: 240px;
+  }
+
+  .toggle {
+    top: 200px;
+  }
+
+  .active .toggle {
+    top: 660px;
+  }
+
+  .content {
+    top: 320px;
+  }
+}
 .canvaswrapper {
   position: relative;
 }
@@ -96,6 +159,32 @@
     opacity: 0%;
   }
 }
+@-webkit-keyframes delay {
+  0% {
+    display: block;
+    opacity: 100%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    display: none;
+    opacity: 0%;
+  }
+}
+@keyframes delay {
+  0% {
+    display: block;
+    opacity: 100%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    display: none;
+    opacity: 0%;
+  }
+}
 html, body {
   overflow-x: hidden;
 }
@@ -165,6 +254,7 @@ footer {
   overflow: hidden;
   background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {
@@ -298,13 +388,8 @@ button {
   cursor: pointer;
   position: relative;
   z-index: 3;
-  top: 200px;
   background-color: black;
   transition: opacity 0.5s, top 0.5s, transform 0.5s;
-}
-
-.active .toggle {
-  top: 660px;
 }
 
 .toggle img {
@@ -394,30 +479,27 @@ button {
   opacity: 50%;
 }
 
-.item.active {
-  height: 700px;
-}
-
-.item.inactive {
-  height: 240px;
-}
-
 .opened .item.inactive {
   bottom: -460px;
 }
 
 .content {
-  height: 400px;
+  display: none;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-  top: 220px;
   left: 0;
   z-index: 2;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.719);
+  transition: top 0.5s;
+}
+
+.active .content {
+  display: block;
 }
 
 ::-webkit-scrollbar {
