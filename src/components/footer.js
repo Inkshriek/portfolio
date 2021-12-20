@@ -1,6 +1,6 @@
 function Footer() {
     return <footer>
-        <img src="./img/cool-logo.gif" alt="Now let's vibe."/>
+        <img src="./img/cool-logo.gif" alt="cool vibes"/>
         <div className="socials">
             <a className="github" href="https://github.com/Inkshriek" title="GitHub">
                 <img draggable="false" src="./img/github.png" alt=""/>
