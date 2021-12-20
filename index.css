@@ -96,6 +96,10 @@
     opacity: 0%;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   background-image: url(./img/background-photo.jpeg);
@@ -103,7 +107,6 @@ body {
   background-size: cover;
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 footer {
