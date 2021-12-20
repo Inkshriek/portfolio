@@ -134,7 +134,7 @@ footer {
 }
 
 .carousel.opened {
-  height: 850px;
+  height: 750px;
 }
 
 .item {
@@ -304,7 +304,7 @@ button {
 }
 
 .active .toggle {
-  top: 760px;
+  top: 660px;
 }
 
 .toggle img {
@@ -395,7 +395,7 @@ button {
 }
 
 .item.active {
-  height: 800px;
+  height: 700px;
 }
 
 .item.inactive {
@@ -403,7 +403,7 @@ button {
 }
 
 .opened .item.inactive {
-  bottom: -560px;
+  bottom: -460px;
 }
 
 .content {
@@ -413,7 +413,7 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-  top: 320px;
+  top: 220px;
   left: 0;
   z-index: 2;
   text-align: center;
