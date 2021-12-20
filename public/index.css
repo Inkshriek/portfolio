@@ -96,12 +96,12 @@
     opacity: 0%;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
-  -webkit-animation-name: fadein-fancy;
-          animation-name: fadein-fancy;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
   background-image: url(./img/background-photo.jpeg);
   background-attachment: fixed;
   background-size: cover;
@@ -142,21 +142,29 @@ footer {
   position: relative;
   bottom: 0;
   max-width: 900px;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-color: black;
   color: white;
   background-color: white;
-  overflow: hidden;
-  flex: 0 0 100%;
   scroll-snap-align: start;
-  border-radius: 5px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
   transition: height 0.5s, bottom 0.5s;
   scroll-snap-align: center;
+  -webkit-animation-name: fadein-fancy;
+          animation-name: fadein-fancy;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.item-inner {
+  width: 100%;
+  height: 100%;
+  outline: solid black 2px;
+  outline-offset: -2px;
+  overflow: hidden;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .card {
@@ -173,6 +181,10 @@ footer {
   min-height: 400px;
   text-align: center;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-animation-name: fadein-fancy;
+          animation-name: fadein-fancy;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .icon {
@@ -186,6 +198,11 @@ footer {
 .decor {
   position: absolute;
   z-index: -1;
+  pointer-events: none;
+}
+
+.item .decor {
+  z-index: 3;
 }
 
 .decor.bl {
@@ -234,6 +251,11 @@ h1 {
   color: white;
   text-align: center;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-animation-name: fadein-fancy;
+          animation-name: fadein-fancy;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
 }
 
 .card p {
@@ -277,7 +299,7 @@ button {
   position: relative;
   z-index: 3;
   top: 200px;
-  background-color: rgba(0, 0, 0, 0.719);
+  background-color: black;
   transition: opacity 0.5s, top 0.5s, transform 0.5s;
 }
 
@@ -286,7 +308,7 @@ button {
 }
 
 .toggle img {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   opacity: 50%;
   position: relative;
   height: 40px;
@@ -296,7 +318,7 @@ button {
 }
 
 .active .toggle img {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 .toggle:hover img {
@@ -388,16 +410,14 @@ button {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-  top: 300px;
+  top: 320px;
   left: 0;
   z-index: 2;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.719);
-  border-radius: 5px;
 }
 
 ::-webkit-scrollbar {

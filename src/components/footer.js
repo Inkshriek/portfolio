@@ -1,6 +1,6 @@
 function Footer() {
     return <footer>
-        <p>Site developed by hand in HTML5, CSS3, Sass, React, and jQuery. Background image is free-to-use from <a href="https://www.pexels.com/">Pexels.</a></p>
+        <img src="./img/cool-logo.gif" alt="Now let's vibe."/>
         <div className="socials">
             <a className="github" href="https://github.com/Inkshriek" title="GitHub">
                 <img draggable="false" src="./img/github.png" alt=""/>
@@ -15,6 +15,7 @@ function Footer() {
                 <img draggable="false" src="./img/linkedin.png" alt=""/>
                 </a>
         </div>
+        <p>Site developed by hand in HTML5, CSS3, Sass, React, and jQuery. Background image is free-to-use from <a href="https://www.pexels.com/">Pexels.</a></p>
     </footer>
 }
 
