@@ -20,28 +20,6 @@ $expandedheight: 700px;
 @media (min-width:320px) {
     // smartphones, portrait iPhone, portrait 480x320 phones (Android)
     .item.active {
-        height: $expandedheight - 125px;
-    }
-    
-    .item.inactive {
-        height: $itemheight - 125px;
-    }
-
-    .toggle {
-        top: $itemheight - $dropdownheight - 125px;
-    }
-
-    .active .toggle {
-        top: $expandedheight - $dropdownheight - 125px;
-    }
-
-    .content {
-        top: $expandedheight - $descheight - $dropdownheight * 2 - 125px;
-    }
-}
-@media (min-width:480px)  {  
-    // smartphones, Android phones, landscape iPhone
-    .item.active {
         height: $expandedheight - 100px;
     }
     
@@ -58,7 +36,41 @@ $expandedheight: 700px;
     }
 
     .content {
-        top: $expandedheight - $descheight - $dropdownheight * 2 - 100px; 
+        top: $expandedheight - $descheight - $dropdownheight * 2 - 100px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    .icon {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    h1 {
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+}
+@media (min-width:480px)  {  
+    // smartphones, Android phones, landscape iPhone
+    .item.active {
+        height: $expandedheight - 80px;
+    }
+    
+    .item.inactive {
+        height: $itemheight - 80px;
+    }
+
+    .toggle {
+        top: $itemheight - $dropdownheight - 80px;
+    }
+
+    .active .toggle {
+        top: $expandedheight - $dropdownheight - 80px;
+    }
+
+    .content {
+        top: $expandedheight - $descheight - $dropdownheight * 2 - 80px; 
     }
 }
 @media (min-width:600px)  {  
@@ -81,6 +93,17 @@ $expandedheight: 700px;
 
     .content {
         top: $expandedheight - $descheight - $dropdownheight * 2;
+    }
+    p {
+        font-size: 16px;
+    }
+    .icon {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    h1 {
+        margin-bottom: 40px;
+        margin-top: 80px;
     }
 }
 @media (min-width:801px)  { 
@@ -219,8 +242,6 @@ footer {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .decor {
@@ -266,8 +287,6 @@ footer {
 }
 
 h1 {
-    margin-top: 80px;
-    margin-bottom: 40px;
     color: white;
     text-align: center;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.50);
@@ -284,7 +303,7 @@ h1 {
 
 .card h2 {
     margin: 0px 0px 0px 0px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .item p {
