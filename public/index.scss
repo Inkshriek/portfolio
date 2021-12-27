@@ -164,6 +164,14 @@ body {
     scroll-behavior: smooth;
 }
 
+nav {
+    display: block;
+    background-color: black;
+    max-width: 600px;
+    border-radius: 5px;
+    height: 100px;
+}
+
 footer {
     display: block;
     background-color: black;
@@ -488,6 +496,7 @@ a:active {
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .socials a {

@@ -2,6 +2,7 @@ import React from "react";
 import ItemList from "./components/itemlist.js";
 import Card from "./components/card.js";
 import Footer from "./components/footer.js";
+import Nav from "./components/navbar.js";
 
 function Site() {
     return (
