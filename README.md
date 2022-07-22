@@ -4,6 +4,8 @@ Hello! If you're reading this, that means you're seeing the repository for my po
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and developed solely by hand, including the decorative images I'm using as custom element borders. Yes, I went pretty extra with the design. There's a lot of work that still needs to be done with it though, so expect improvements and additions over time!
 
+https://inkshriek.github.io/portfolio/
+
 ## Church of Cthulhu
 A static fictional site made for a fictional client's needs.
 * [Repository](https://github.com/Inkshriek/Church-of-Cthulhu)
